@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: white;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.zona-juego {
+	background: white;
+	width: 100vw;
+	height: 90vh;
+	margin-top: 10vh;
+}
+.contenedor {
+	width: 700px;
+	margin: auto;
+}
+/*-------------turno-------------*/
+.contenedor-turno.contenedor {
+    background: #f8f8f8;
+    height: 128px;
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+ 	border-left: 1px solid #e1e1e1;  
+}
+.contenedor-turno .contenedor-turno {
+	height: inherit;
+    display: flex;
+    margin: auto;
+}
+.turno {
+	background: white;
+	height: 40px;
+	width: 200px;
+	margin: auto 10px;
+    border-bottom: 2px solid white;
+    transition-property: border-bottom;
+  	transition-duration: .3s;
+  	transition-delay: .2s;
+}
+.turno-x, .turno-o {
+	font-size: 33px;
+    margin-left: 10px;
+}
+.esta-activo {
+	border-bottom: 2px solid #14bdac;
+}
+
+/*-------------turno-------------*/
+
+/*-------------tablero-------------*/
+.contenedor-tablero {
+	background: #14bdac;
+    height: 355px;
+    position: relative;
+    border-right: 1px solid #e1e1e1;
+ 	border-left: 1px solid #e1e1e1;   
+}
+.tablero {
+	padding-top: 20.5px;
+	width: 300px;
+	margin: auto;
+}
+
+.cajon {
+	background: #14bdac;
+	border-bottom: 7px solid #0ca192;
+	display: flex;
+	width: 300px;
+	height: 100px;
+}
+.cajon:nth-child(3) {
+	border-bottom: 0;
+}
+.cajon span {
+	font-size: 100px;
+	margin-bottom: 10px;
+	transition: .1s color;
+}
+.seccion {
+	border-right: 7px solid #0ca192;
+	width: 100px;
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	color: rgba(0,0,0,0);
+}
+.seccion:last-child {
+	border-right: 0;
+}
+.seccion:hover {
+	cursor: pointer;
+	position: relative;
+}
+.elemento-x {
+	color: #545454;
+
+}
+.elemento-o {
+	color: #f2ebd3;
+}
+/*-------------tablero-------------*/
+
+/*---------mensaje-ganador---------*/
+.mensaje-final {
+	background: #14bdac;
+    color: #545454;
+
+	position: absolute;
+	height: inherit;
+    width: inherit;
+    top: 0;
+	
+    display: none;
+	
+    align-items: center;
+    flex-direction: column;
+}
+.mensaje-final .elemento-ganado {
+	height: 250px;
+}
+.mensaje-final .tamanio {
+    font-size: 250px;
+}
+.mensaje-final .mensaje-ganador {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+/*---------mensaje-ganador---------*/
+
+/*----------boton-reinicio----------*/
+.contenedor-boton {
+	border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+ 	border-left: 1px solid #e1e1e1;
+}
+.boton-reinicio {
+	color: rgba(20,189,172, 0.85);
+	background: #f8f8f8;
+    height: 45px;
+	font-size: 12px;
+	font-weight: 800;
+	border: 0;
+	transition: .3s;
+}
+.boton-reinicio:hover{
+	color: rgb(20,189,172);
+	cursor: pointer;
+}
+/*----------boton-reinicio----------*/

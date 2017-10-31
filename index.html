@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TaTeTi</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<section class="zona-juego">
+		<div class="contenedor-turno contenedor">
+
+			<div class="contenedor-turno">
+
+				<div id="turno-x" class="turno esta-activo">
+					<span class="turno-x">x</span>
+				</div>
+				<div id="turno-o" class="turno">
+					<span class="turno-o">o</span>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="contenedor-tablero contenedor">
+
+			<div class="tablero">
+
+				<div class="cajon">
+
+					<div id="caja-0" class="seccion"><span id="texto-0" class=""></span></div>
+					<div id="caja-1" class="seccion"><span id="texto-1" class=""></span></div>
+					<div id="caja-2" class="seccion"><span id="texto-2" class=""></span></div>
+
+				</div>
+				<div class="cajon">
+
+					<div id="caja-3" class="seccion"><span id="texto-3" class=""></span></div>
+					<div id="caja-4" class="seccion"><span id="texto-4" class=""></span></div>
+					<div id="caja-5" class="seccion"><span id="texto-5" class=""></span></div>
+
+				</div>
+				<div class="cajon">
+
+					<div id="caja-6" class="seccion"><span id="texto-6" class=""></span></div>
+					<div id="caja-7" class="seccion"><span id="texto-7" class=""></span></div>
+					<div id="caja-8" class="seccion"><span id="texto-8" class=""></span></div>
+
+				</div>
+
+			</div>
+
+			<div id="mensaje-final" class="mensaje-final">
+
+				<div class="elemento-ganado">
+					<span id="elemento-ganador-x" class="elemento-x tamanio"></span>
+					<span id="elemento-ganador-o" class="elemento-o tamanio"></span>
+				</div>
+
+				<span id="mensaje-ganador" class="mensaje-ganador"></span>
+			</div>
+
+		</div>
+		
+		<div class="contenedor-boton contenedor">
+
+			<input id="boton-reinicio" class="boton-reinicio contenedor" type="button" value="REINICIAR PARTIDA">
+
+		</div>
+
+	</section>
+	<script type="text/javascript" src="js/codigo.js"></script>
+</body>
+</html>
